@@ -1,0 +1,23 @@
+{
+  "name": "paprikabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.7.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doubtingreality/PaprikaBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doubtingreality/PaprikaBot/issues"
+  },
+  "homepage": "https://github.com/doubtingreality/PaprikaBot#readme"
+}

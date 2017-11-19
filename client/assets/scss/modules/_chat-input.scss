@@ -1,0 +1,22 @@
+.chat-input {
+	display: inline-block;
+	box-sizing: border-box;
+	width: calc(100% - 11rem);
+	height: 2.5rem;
+	margin-right: 1rem;
+	padding: .5rem;
+	line-height: 1.2rem;
+	vertical-align: top;
+	resize: none;
+}
+
+.chat-submit {
+	-webkit-appearance: none;
+	display: inline-block;
+	width: 10rem;
+	height: 2.5rem;
+	border: 0;
+	background: $cl-primary;
+	color: $cl-foreground-inverted;
+	vertical-align: top;
+}

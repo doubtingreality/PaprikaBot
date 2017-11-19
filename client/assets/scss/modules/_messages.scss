@@ -1,0 +1,28 @@
+.messages {
+	box-sizing: border-box;
+	width: 100%;
+	height: calc(100vh - 8.5rem);
+	margin-bottom: 1rem;
+	padding: 1rem;
+	overflow: auto;
+	background: lighten($cl-background, 5%);
+}
+
+.message {
+	display: inline-block;
+	padding: 1rem;
+	border-radius: .5rem;
+	background: $cl-white;
+	box-shadow: 0 .05rem .02rem 0 transparentize($cl-black, .85), 0 .2rem .3rem 0 transparentize($cl-black, .94);
+
+	+ .message {
+		margin-top: 1rem;
+	}
+
+	&--self {
+		float: right;
+		clear: both;
+		background: desaturate(lighten($cl-primary, 40%), 30%);
+		color: lighten(mix($cl-foreground, desaturate($cl-primary, 30%), 90%), 10%);
+	}
+}

@@ -1,0 +1,31 @@
+html {
+	font-size: 112.5%;
+}
+
+html,
+body {
+	height: 100%;
+	background: $cl-background;
+	font-family: $fn-base;
+}
+
+main {
+	padding: 0 1rem 1rem;
+}
+
+button {
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}

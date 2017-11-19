@@ -1,0 +1,26 @@
+// Reset default browser properties
+//
+
+* {
+	outline: 0;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	color: $cl-foreground;
+}
+
+button {
+	border-radius: 0;
+	font-family: $fn-base;
+	cursor: pointer;
+}
+
+textarea,
+input {
+	border: 1px solid lighten($cl-foreground, 60%);
+	font-size: 1rem;
+	font-family: $fn-base;
+}
