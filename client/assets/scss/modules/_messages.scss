@@ -9,20 +9,34 @@
 }
 
 .message {
+	clear: both;
+	float: left;
 	display: inline-block;
-	padding: 1rem;
+	padding: .5rem .8rem;
 	border-radius: .5rem;
 	background: $cl-white;
-	box-shadow: 0 .05rem .02rem 0 transparentize($cl-black, .85), 0 .2rem .3rem 0 transparentize($cl-black, .94);
+	box-shadow: 0 .05rem .02rem 0 transparentize($cl-black, .85);
 
 	+ .message {
-		margin-top: 1rem;
+		margin-top: .5rem;
 	}
 
-	&--self {
+	&[data-author='self'] {
 		float: right;
-		clear: both;
 		background: desaturate(lighten($cl-primary, 40%), 30%);
 		color: lighten(mix($cl-foreground, desaturate($cl-primary, 30%), 90%), 10%);
+	}
+}
+
+.paprika-status {
+	position: absolute;
+	padding: .5rem;
+	background: transparentize($cl-primary, .5);
+	transform: translateY(calc(-100% - 1rem));
+	opacity: 0;
+	transition: opacity 200ms;
+
+	&.is-visible {
+		opacity: 1;
 	}
 }
